@@ -14,17 +14,25 @@
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libswscale/swscale.h>
+#include <libswresample/swresample.h>
+#include <libavutil/time.h>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_thread.h>
 
 typedef struct PacketQueue{
-
     AVPacketList *first_pkt;
     AVPacketList *last_pkt;
     int nb_packet;
     int size;
     SDL_mutex *muter;
     SDL_cond *cond;
-    
 }PacketQueue;
+
+int packet_queue_put(PacketQueue *pq,AVPacket *pkt);
+
+int packet_queue_get(PacketQueue *pq,AVPacket *pkt,int block);
+
+void packet_queue_init(PacketQueue *pq);
+
+
 #endif /* PacketQueue_h */

@@ -26,6 +26,7 @@
 		42DD362F1F55688E00F1F51C /* HandlerAudio.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD362D1F55688E00F1F51C /* HandlerAudio.c */; };
 		42DD36321F5568A000F1F51C /* MainPlayer.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36301F5568A000F1F51C /* MainPlayer.c */; };
 		42DD36341F5569A800F1F51C /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD36331F5569A800F1F51C /* libSDL2-2.0.0.dylib */; };
+		42DD36371F55703F00F1F51C /* PlayPro.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36351F55703F00F1F51C /* PlayPro.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +65,8 @@
 		42DD36301F5568A000F1F51C /* MainPlayer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MainPlayer.c; sourceTree = "<group>"; };
 		42DD36311F5568A000F1F51C /* MainPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPlayer.h; sourceTree = "<group>"; };
 		42DD36331F5569A800F1F51C /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../usr/local/Cellar/sdl2/2.0.5/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		42DD36351F55703F00F1F51C /* PlayPro.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PlayPro.c; sourceTree = "<group>"; };
+		42DD36361F55703F00F1F51C /* PlayPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayPro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 				42DD362E1F55688E00F1F51C /* HandlerAudio.h */,
 				42DD36301F5568A000F1F51C /* MainPlayer.c */,
 				42DD36311F5568A000F1F51C /* MainPlayer.h */,
+				42DD36351F55703F00F1F51C /* PlayPro.c */,
+				42DD36361F55703F00F1F51C /* PlayPro.h */,
 			);
 			name = SyncPlayer;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DD36371F55703F00F1F51C /* PlayPro.c in Sources */,
 				42DD36011F55418200F1F51C /* main.c in Sources */,
 				42DD36271F55426300F1F51C /* PacketQueue.c in Sources */,
 				42DD362F1F55688E00F1F51C /* HandlerAudio.c in Sources */,

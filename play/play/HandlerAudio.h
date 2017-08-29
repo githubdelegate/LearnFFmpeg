@@ -10,5 +10,6 @@
 #define HandlerAudio_h
 
 #include <stdio.h>
+#include "PlayPro.h"
 
 #endif /* HandlerAudio_h */
