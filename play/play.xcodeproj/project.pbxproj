@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42DD36011F55418200F1F51C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36001F55418200F1F51C /* main.c */; };
+		42DD36111F5541FC00F1F51C /* libavcodec.57.89.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD36081F5541FC00F1F51C /* libavcodec.57.89.100.dylib */; };
+		42DD36121F5541FC00F1F51C /* libavdevice.57.6.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD36091F5541FC00F1F51C /* libavdevice.57.6.100.dylib */; };
+		42DD36131F5541FC00F1F51C /* libavfilter.6.82.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD360A1F5541FC00F1F51C /* libavfilter.6.82.100.dylib */; };
+		42DD36141F5541FC00F1F51C /* libavformat.57.71.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD360B1F5541FC00F1F51C /* libavformat.57.71.100.dylib */; };
+		42DD36151F5541FC00F1F51C /* libavresample.3.5.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD360C1F5541FC00F1F51C /* libavresample.3.5.0.dylib */; };
+		42DD36161F5541FC00F1F51C /* libavutil.55.58.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD360D1F5541FC00F1F51C /* libavutil.55.58.100.dylib */; };
+		42DD36171F5541FC00F1F51C /* libpostproc.54.5.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD360E1F5541FC00F1F51C /* libpostproc.54.5.100.dylib */; };
+		42DD36181F5541FC00F1F51C /* libswresample.2.7.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD360F1F5541FC00F1F51C /* libswresample.2.7.100.dylib */; };
+		42DD36191F5541FC00F1F51C /* libswscale.4.6.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD36101F5541FC00F1F51C /* libswscale.4.6.100.dylib */; };
+		42DD361B1F55420200F1F51C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD361A1F55420200F1F51C /* AudioToolbox.framework */; };
+		42DD361D1F55421600F1F51C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD361C1F55421600F1F51C /* CoreMedia.framework */; };
+		42DD361F1F55422A00F1F51C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD361E1F55422A00F1F51C /* libz.tbd */; };
+		42DD36211F55423100F1F51C /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD36201F55423100F1F51C /* libiconv.2.tbd */; };
+		42DD36231F55423C00F1F51C /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD36221F55423C00F1F51C /* libbz2.tbd */; };
+		42DD36271F55426300F1F51C /* PacketQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36251F55426300F1F51C /* PacketQueue.c */; };
+		42DD362F1F55688E00F1F51C /* HandlerAudio.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD362D1F55688E00F1F51C /* HandlerAudio.c */; };
+		42DD36321F5568A000F1F51C /* MainPlayer.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36301F5568A000F1F51C /* MainPlayer.c */; };
+		42DD36341F5569A800F1F51C /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD36331F5569A800F1F51C /* libSDL2-2.0.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42DD35FB1F55418200F1F51C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		42DD35FD1F55418200F1F51C /* play */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = play; sourceTree = BUILT_PRODUCTS_DIR; };
+		42DD36001F55418200F1F51C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		42DD36081F5541FC00F1F51C /* libavcodec.57.89.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.57.89.100.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/3.3.3/lib/libavcodec.57.89.100.dylib; sourceTree = "<group>"; };
+		42DD36091F5541FC00F1F51C /* libavdevice.57.6.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.57.6.100.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/3.3.3/lib/libavdevice.57.6.100.dylib; sourceTree = "<group>"; };
+		42DD360A1F5541FC00F1F51C /* libavfilter.6.82.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavfilter.6.82.100.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/3.3.3/lib/libavfilter.6.82.100.dylib; sourceTree = "<group>"; };
+		42DD360B1F5541FC00F1F51C /* libavformat.57.71.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.57.71.100.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/3.3.3/lib/libavformat.57.71.100.dylib; sourceTree = "<group>"; };
+		42DD360C1F5541FC00F1F51C /* libavresample.3.5.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavresample.3.5.0.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/3.3.3/lib/libavresample.3.5.0.dylib; sourceTree = "<group>"; };
+		42DD360D1F5541FC00F1F51C /* libavutil.55.58.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.55.58.100.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/3.3.3/lib/libavutil.55.58.100.dylib; sourceTree = "<group>"; };
+		42DD360E1F5541FC00F1F51C /* libpostproc.54.5.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpostproc.54.5.100.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/3.3.3/lib/libpostproc.54.5.100.dylib; sourceTree = "<group>"; };
+		42DD360F1F5541FC00F1F51C /* libswresample.2.7.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.2.7.100.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/3.3.3/lib/libswresample.2.7.100.dylib; sourceTree = "<group>"; };
+		42DD36101F5541FC00F1F51C /* libswscale.4.6.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.4.6.100.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/3.3.3/lib/libswscale.4.6.100.dylib; sourceTree = "<group>"; };
+		42DD361A1F55420200F1F51C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		42DD361C1F55421600F1F51C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		42DD361E1F55422A00F1F51C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		42DD36201F55423100F1F51C /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		42DD36221F55423C00F1F51C /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		42DD36251F55426300F1F51C /* PacketQueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PacketQueue.c; sourceTree = "<group>"; };
+		42DD36261F55426300F1F51C /* PacketQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketQueue.h; sourceTree = "<group>"; };
+		42DD362D1F55688E00F1F51C /* HandlerAudio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HandlerAudio.c; sourceTree = "<group>"; };
+		42DD362E1F55688E00F1F51C /* HandlerAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandlerAudio.h; sourceTree = "<group>"; };
+		42DD36301F5568A000F1F51C /* MainPlayer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MainPlayer.c; sourceTree = "<group>"; };
+		42DD36311F5568A000F1F51C /* MainPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPlayer.h; sourceTree = "<group>"; };
+		42DD36331F5569A800F1F51C /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../usr/local/Cellar/sdl2/2.0.5/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42DD35FA1F55418200F1F51C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DD36341F5569A800F1F51C /* libSDL2-2.0.0.dylib in Frameworks */,
+				42DD36231F55423C00F1F51C /* libbz2.tbd in Frameworks */,
+				42DD36211F55423100F1F51C /* libiconv.2.tbd in Frameworks */,
+				42DD361F1F55422A00F1F51C /* libz.tbd in Frameworks */,
+				42DD361D1F55421600F1F51C /* CoreMedia.framework in Frameworks */,
+				42DD361B1F55420200F1F51C /* AudioToolbox.framework in Frameworks */,
+				42DD36111F5541FC00F1F51C /* libavcodec.57.89.100.dylib in Frameworks */,
+				42DD36121F5541FC00F1F51C /* libavdevice.57.6.100.dylib in Frameworks */,
+				42DD36131F5541FC00F1F51C /* libavfilter.6.82.100.dylib in Frameworks */,
+				42DD36141F5541FC00F1F51C /* libavformat.57.71.100.dylib in Frameworks */,
+				42DD36151F5541FC00F1F51C /* libavresample.3.5.0.dylib in Frameworks */,
+				42DD36161F5541FC00F1F51C /* libavutil.55.58.100.dylib in Frameworks */,
+				42DD36171F5541FC00F1F51C /* libpostproc.54.5.100.dylib in Frameworks */,
+				42DD36181F5541FC00F1F51C /* libswresample.2.7.100.dylib in Frameworks */,
+				42DD36191F5541FC00F1F51C /* libswscale.4.6.100.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42DD35F41F55418200F1F51C = {
+			isa = PBXGroup;
+			children = (
+				42DD35FF1F55418200F1F51C /* play */,
+				42DD35FE1F55418200F1F51C /* Products */,
+				42DD36071F5541FC00F1F51C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42DD35FE1F55418200F1F51C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42DD35FD1F55418200F1F51C /* play */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42DD35FF1F55418200F1F51C /* play */ = {
+			isa = PBXGroup;
+			children = (
+				42DD36241F55424B00F1F51C /* SyncPlayer */,
+				42DD36001F55418200F1F51C /* main.c */,
+			);
+			path = play;
+			sourceTree = "<group>";
+		};
+		42DD36071F5541FC00F1F51C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42DD36331F5569A800F1F51C /* libSDL2-2.0.0.dylib */,
+				42DD36221F55423C00F1F51C /* libbz2.tbd */,
+				42DD36201F55423100F1F51C /* libiconv.2.tbd */,
+				42DD361E1F55422A00F1F51C /* libz.tbd */,
+				42DD361C1F55421600F1F51C /* CoreMedia.framework */,
+				42DD361A1F55420200F1F51C /* AudioToolbox.framework */,
+				42DD36081F5541FC00F1F51C /* libavcodec.57.89.100.dylib */,
+				42DD36091F5541FC00F1F51C /* libavdevice.57.6.100.dylib */,
+				42DD360A1F5541FC00F1F51C /* libavfilter.6.82.100.dylib */,
+				42DD360B1F5541FC00F1F51C /* libavformat.57.71.100.dylib */,
+				42DD360C1F5541FC00F1F51C /* libavresample.3.5.0.dylib */,
+				42DD360D1F5541FC00F1F51C /* libavutil.55.58.100.dylib */,
+				42DD360E1F5541FC00F1F51C /* libpostproc.54.5.100.dylib */,
+				42DD360F1F5541FC00F1F51C /* libswresample.2.7.100.dylib */,
+				42DD36101F5541FC00F1F51C /* libswscale.4.6.100.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42DD36241F55424B00F1F51C /* SyncPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				42DD36251F55426300F1F51C /* PacketQueue.c */,
+				42DD36261F55426300F1F51C /* PacketQueue.h */,
+				42DD362D1F55688E00F1F51C /* HandlerAudio.c */,
+				42DD362E1F55688E00F1F51C /* HandlerAudio.h */,
+				42DD36301F5568A000F1F51C /* MainPlayer.c */,
+				42DD36311F5568A000F1F51C /* MainPlayer.h */,
+			);
+			name = SyncPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42DD35FC1F55418200F1F51C /* play */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42DD36041F55418200F1F51C /* Build configuration list for PBXNativeTarget "play" */;
+			buildPhases = (
+				42DD35F91F55418200F1F51C /* Sources */,
+				42DD35FA1F55418200F1F51C /* Frameworks */,
+				42DD35FB1F55418200F1F51C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = play;
+			productName = play;
+			productReference = 42DD35FD1F55418200F1F51C /* play */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42DD35F51F55418200F1F51C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = zhangyun;
+				TargetAttributes = {
+					42DD35FC1F55418200F1F51C = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 42DD35F81F55418200F1F51C /* Build configuration list for PBXProject "play" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42DD35F41F55418200F1F51C;
+			productRefGroup = 42DD35FE1F55418200F1F51C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42DD35FC1F55418200F1F51C /* play */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42DD35F91F55418200F1F51C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DD36011F55418200F1F51C /* main.c in Sources */,
+				42DD36271F55426300F1F51C /* PacketQueue.c in Sources */,
+				42DD362F1F55688E00F1F51C /* HandlerAudio.c in Sources */,
+				42DD36321F5568A000F1F51C /* MainPlayer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		42DD36021F55418200F1F51C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42DD36031F55418200F1F51C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42DD36051F55418200F1F51C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/ffmpeg/3.3.3/lib,
+					/usr/local/Cellar/sdl2/2.0.5/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42DD36061F55418200F1F51C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/ffmpeg/3.3.3/lib,
+					/usr/local/Cellar/sdl2/2.0.5/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42DD35F81F55418200F1F51C /* Build configuration list for PBXProject "play" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42DD36021F55418200F1F51C /* Debug */,
+				42DD36031F55418200F1F51C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42DD36041F55418200F1F51C /* Build configuration list for PBXNativeTarget "play" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42DD36051F55418200F1F51C /* Debug */,
+				42DD36061F55418200F1F51C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42DD35F51F55418200F1F51C /* Project object */;
+}
