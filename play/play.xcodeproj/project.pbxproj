@@ -27,6 +27,14 @@
 		42DD36321F5568A000F1F51C /* MainPlayer.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36301F5568A000F1F51C /* MainPlayer.c */; };
 		42DD36341F5569A800F1F51C /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DD36331F5569A800F1F51C /* libSDL2-2.0.0.dylib */; };
 		42DD36371F55703F00F1F51C /* PlayPro.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36351F55703F00F1F51C /* PlayPro.c */; };
+		42DD36581F56BEDC00F1F51C /* audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD364D1F56BEDB00F1F51C /* audio.c */; };
+		42DD36591F56BEDC00F1F51C /* packet_queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD364F1F56BEDB00F1F51C /* packet_queue.c */; };
+		42DD365A1F56BEDC00F1F51C /* player7.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36511F56BEDB00F1F51C /* player7.c */; };
+		42DD365C1F56BEDC00F1F51C /* seek_about.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36541F56BEDB00F1F51C /* seek_about.c */; };
+		42DD365D1F56BEDC00F1F51C /* video.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36561F56BEDB00F1F51C /* video.c */; };
+		42DD36601F56BFFA00F1F51C /* wrap_base.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD365E1F56BFFA00F1F51C /* wrap_base.c */; };
+		42DD36641F57CAB600F1F51C /* watermark.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36621F57CAB600F1F51C /* watermark.c */; };
+		42DD36681F5807DA00F1F51C /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36661F5807DA00F1F51C /* filter.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,6 +75,23 @@
 		42DD36331F5569A800F1F51C /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../usr/local/Cellar/sdl2/2.0.5/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		42DD36351F55703F00F1F51C /* PlayPro.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = PlayPro.c; sourceTree = "<group>"; };
 		42DD36361F55703F00F1F51C /* PlayPro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayPro.h; sourceTree = "<group>"; };
+		42DD364D1F56BEDB00F1F51C /* audio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = audio.c; sourceTree = "<group>"; };
+		42DD364E1F56BEDB00F1F51C /* audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio.h; sourceTree = "<group>"; };
+		42DD364F1F56BEDB00F1F51C /* packet_queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = packet_queue.c; sourceTree = "<group>"; };
+		42DD36501F56BEDB00F1F51C /* packet_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = packet_queue.h; sourceTree = "<group>"; };
+		42DD36511F56BEDB00F1F51C /* player7.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = player7.c; sourceTree = "<group>"; };
+		42DD36521F56BEDB00F1F51C /* player7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player7.h; sourceTree = "<group>"; };
+		42DD36541F56BEDB00F1F51C /* seek_about.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = seek_about.c; sourceTree = "<group>"; };
+		42DD36551F56BEDB00F1F51C /* seek_about.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seek_about.h; sourceTree = "<group>"; };
+		42DD36561F56BEDB00F1F51C /* video.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = video.c; sourceTree = "<group>"; };
+		42DD36571F56BEDB00F1F51C /* video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = video.h; sourceTree = "<group>"; };
+		42DD365E1F56BFFA00F1F51C /* wrap_base.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wrap_base.c; sourceTree = "<group>"; };
+		42DD365F1F56BFFA00F1F51C /* wrap_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrap_base.h; sourceTree = "<group>"; };
+		42DD36621F57CAB600F1F51C /* watermark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = watermark.c; sourceTree = "<group>"; };
+		42DD36631F57CAB600F1F51C /* watermark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = watermark.h; sourceTree = "<group>"; };
+		42DD36651F57F3A000F1F51C /* my_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_logo.png; sourceTree = "<group>"; };
+		42DD36661F5807DA00F1F51C /* filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filter.c; sourceTree = "<group>"; };
+		42DD36671F5807DA00F1F51C /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +140,9 @@
 		42DD35FF1F55418200F1F51C /* play */ = {
 			isa = PBXGroup;
 			children = (
+				42DD36651F57F3A000F1F51C /* my_logo.png */,
+				42DD36611F57CAA100F1F51C /* watermark */,
+				42DD364C1F56BEDB00F1F51C /* player_v1.7 */,
 				42DD36241F55424B00F1F51C /* SyncPlayer */,
 				42DD36001F55418200F1F51C /* main.c */,
 			);
@@ -156,6 +184,36 @@
 				42DD36361F55703F00F1F51C /* PlayPro.h */,
 			);
 			name = SyncPlayer;
+			sourceTree = "<group>";
+		};
+		42DD364C1F56BEDB00F1F51C /* player_v1.7 */ = {
+			isa = PBXGroup;
+			children = (
+				42DD365E1F56BFFA00F1F51C /* wrap_base.c */,
+				42DD365F1F56BFFA00F1F51C /* wrap_base.h */,
+				42DD364D1F56BEDB00F1F51C /* audio.c */,
+				42DD364E1F56BEDB00F1F51C /* audio.h */,
+				42DD364F1F56BEDB00F1F51C /* packet_queue.c */,
+				42DD36501F56BEDB00F1F51C /* packet_queue.h */,
+				42DD36511F56BEDB00F1F51C /* player7.c */,
+				42DD36521F56BEDB00F1F51C /* player7.h */,
+				42DD36541F56BEDB00F1F51C /* seek_about.c */,
+				42DD36551F56BEDB00F1F51C /* seek_about.h */,
+				42DD36561F56BEDB00F1F51C /* video.c */,
+				42DD36571F56BEDB00F1F51C /* video.h */,
+			);
+			path = player_v1.7;
+			sourceTree = "<group>";
+		};
+		42DD36611F57CAA100F1F51C /* watermark */ = {
+			isa = PBXGroup;
+			children = (
+				42DD36621F57CAB600F1F51C /* watermark.c */,
+				42DD36631F57CAB600F1F51C /* watermark.h */,
+				42DD36661F5807DA00F1F51C /* filter.c */,
+				42DD36671F5807DA00F1F51C /* filter.h */,
+			);
+			name = watermark;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,10 +273,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DD36581F56BEDC00F1F51C /* audio.c in Sources */,
+				42DD36591F56BEDC00F1F51C /* packet_queue.c in Sources */,
 				42DD36371F55703F00F1F51C /* PlayPro.c in Sources */,
+				42DD365C1F56BEDC00F1F51C /* seek_about.c in Sources */,
 				42DD36011F55418200F1F51C /* main.c in Sources */,
+				42DD36601F56BFFA00F1F51C /* wrap_base.c in Sources */,
 				42DD36271F55426300F1F51C /* PacketQueue.c in Sources */,
+				42DD365D1F56BEDC00F1F51C /* video.c in Sources */,
 				42DD362F1F55688E00F1F51C /* HandlerAudio.c in Sources */,
+				42DD365A1F56BEDC00F1F51C /* player7.c in Sources */,
+				42DD36641F57CAB600F1F51C /* watermark.c in Sources */,
+				42DD36681F5807DA00F1F51C /* filter.c in Sources */,
 				42DD36321F5568A000F1F51C /* MainPlayer.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,9 +7,11 @@
 //
 
 #include <stdio.h>
+#include "player7.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     printf("Hello, World!\n");
+    playSync7();
     return 0;
 }
