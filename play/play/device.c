@@ -164,7 +164,9 @@ int device_main(int argc, char* argv[])
     AVInputFormat *ifmt=av_find_input_format("avfoundation");
     //Avfoundation
     //[video]:[audio]
+    // 必须设置成NULL 不然会crash
     AVDictionary *opt= NULL;
+    // 必须设置帧率，不然会报找不到对应设备
     av_dict_set(&opt, "framerate", "30",0);
     av_dict_set(&opt, "video_size", "640*480", 0);
     if(avformat_open_input(&pFormatCtx,"0",ifmt,&opt)!=0){
@@ -249,14 +251,14 @@ int device_main(int argc, char* argv[])
     
     
     AVFrame out_frame;
-    out_frame.format = AV_PIX_FMT_YVYU422;
+    out_frame.format = AV_PIX_FMT_UYVY422;
     out_frame.width = screen_w;
     out_frame.height = screen_h;
     //用av_image_fill_arrays代替。
     //根据所给参数和提供的数据设置data指针和linesizes。
 //    av_image_fill_arrays(out_frame->data,out_frame->linesize, video_buf, AV_PIX_FMT_YVYU422, screen_w, screen_h, 0);
     
-    int size =  av_image_get_buffer_size(AV_PIX_FMT_YVYU422, screen_w, screen_h, 1);
+    int size =  av_image_get_buffer_size(AV_PIX_FMT_UYVY422, screen_w, screen_h, 1);
     uint8_t *video_buf = (uint8_t *)av_malloc(size);
     avpicture_fill((AVPicture *)&out_frame,video_buf,AV_PIX_FMT_UYVY422,screen_w,screen_h);
 
@@ -282,7 +284,7 @@ int device_main(int argc, char* argv[])
 #endif
     
     struct SwsContext *img_convert_ctx;
-    img_convert_ctx = sws_getContext(pCodecCtx->width, pCodecCtx->height, pCodecCtx->pix_fmt, pCodecCtx->width, pCodecCtx->height, AV_PIX_FMT_YVYU422, SWS_BICUBIC, NULL, NULL, NULL);
+    img_convert_ctx = sws_getContext(pCodecCtx->width, pCodecCtx->height, pCodecCtx->pix_fmt, pCodecCtx->width, pCodecCtx->height, AV_PIX_FMT_UYVY422, SWS_BICUBIC, NULL, NULL, NULL);
     //------------------------------
     SDL_Thread *video_tid = SDL_CreateThread(sfp_refresh_thread,"refresh thread",NULL);
     //
