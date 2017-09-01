@@ -35,6 +35,7 @@
 		42DD36601F56BFFA00F1F51C /* wrap_base.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD365E1F56BFFA00F1F51C /* wrap_base.c */; };
 		42DD36641F57CAB600F1F51C /* watermark.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36621F57CAB600F1F51C /* watermark.c */; };
 		42DD36681F5807DA00F1F51C /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD36661F5807DA00F1F51C /* filter.c */; };
+		42DD366C1F58FA3300F1F51C /* device.c in Sources */ = {isa = PBXBuildFile; fileRef = 42DD366A1F58FA3300F1F51C /* device.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,6 +93,8 @@
 		42DD36651F57F3A000F1F51C /* my_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_logo.png; sourceTree = "<group>"; };
 		42DD36661F5807DA00F1F51C /* filter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filter.c; sourceTree = "<group>"; };
 		42DD36671F5807DA00F1F51C /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter.h; sourceTree = "<group>"; };
+		42DD366A1F58FA3300F1F51C /* device.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = device.c; sourceTree = "<group>"; };
+		42DD366B1F58FA3300F1F51C /* device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = device.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,7 @@
 		42DD35FF1F55418200F1F51C /* play */ = {
 			isa = PBXGroup;
 			children = (
+				42DD36691F58FA2200F1F51C /* device */,
 				42DD36651F57F3A000F1F51C /* my_logo.png */,
 				42DD36611F57CAA100F1F51C /* watermark */,
 				42DD364C1F56BEDB00F1F51C /* player_v1.7 */,
@@ -216,6 +220,15 @@
 			name = watermark;
 			sourceTree = "<group>";
 		};
+		42DD36691F58FA2200F1F51C /* device */ = {
+			isa = PBXGroup;
+			children = (
+				42DD366A1F58FA3300F1F51C /* device.c */,
+				42DD366B1F58FA3300F1F51C /* device.h */,
+			);
+			name = device;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -280,6 +293,7 @@
 				42DD36011F55418200F1F51C /* main.c in Sources */,
 				42DD36601F56BFFA00F1F51C /* wrap_base.c in Sources */,
 				42DD36271F55426300F1F51C /* PacketQueue.c in Sources */,
+				42DD366C1F58FA3300F1F51C /* device.c in Sources */,
 				42DD365D1F56BEDC00F1F51C /* video.c in Sources */,
 				42DD362F1F55688E00F1F51C /* HandlerAudio.c in Sources */,
 				42DD365A1F56BEDC00F1F51C /* player7.c in Sources */,
