@@ -51,6 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		422FEE261F5AE6E6000156DA /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		422FEE281F5AE734000156DA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		42DD35FD1F55418200F1F51C /* play */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = play; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DD36001F55418200F1F51C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		42DD36081F5541FC00F1F51C /* libavcodec.57.89.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.57.89.100.dylib; path = ../../../../../usr/local/Cellar/ffmpeg/3.3.3/lib/libavcodec.57.89.100.dylib; sourceTree = "<group>"; };
@@ -156,6 +158,8 @@
 		42DD36071F5541FC00F1F51C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				422FEE281F5AE734000156DA /* OpenGL.framework */,
+				422FEE261F5AE6E6000156DA /* GLKit.framework */,
 				42DD36331F5569A800F1F51C /* libSDL2-2.0.0.dylib */,
 				42DD36221F55423C00F1F51C /* libbz2.tbd */,
 				42DD36201F55423100F1F51C /* libiconv.2.tbd */,
@@ -438,6 +442,7 @@
 				42DD36061F55418200F1F51C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

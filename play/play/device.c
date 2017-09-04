@@ -169,7 +169,8 @@ int device_main(int argc, char* argv[])
     // 必须设置帧率，不然会报找不到对应设备
     av_dict_set(&opt, "framerate", "30",0);
     av_dict_set(&opt, "video_size", "640*480", 0);
-    if(avformat_open_input(&pFormatCtx,"0",ifmt,&opt)!=0){
+    av_dict_set(&opt,"follow_mouse","centered",0);
+    if(avformat_open_input(&pFormatCtx,"1",ifmt,&opt)!=0){
         printf("Couldn't open input stream.\n");
         return -1;
     }
