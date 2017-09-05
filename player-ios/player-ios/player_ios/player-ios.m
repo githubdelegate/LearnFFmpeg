@@ -9,14 +9,32 @@
 #include <stdio.h>
 #include "zy__sync_player.h"
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #include <SDL_main.h>
 
 int main(int argc, char * argv[]) {
+
     
-    NSString *file = [[NSBundle mainBundle] pathForResource:@"output.mp4" ofType:nil];
+    UIWindow *myWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.frame = [UIScreen mainScreen].bounds;
+    vc.view.backgroundColor = [UIColor redColor];
+    myWindow.rootViewController = vc;
+    [myWindow makeKeyAndVisible];
     
-    const char *fileP = [file cStringUsingEncoding:NSUTF8StringEncoding];
-    playSync7(fileP);
-        return 0;
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSString *file = [[NSBundle mainBundle] pathForResource:@"output.mp4" ofType:nil];
+        const char *fileP = [file cStringUsingEncoding:NSUTF8StringEncoding];
+        playSync7(fileP);
+    });
+
+
+    //    [UIApplication sharedApplication].keyWindow = myWindow;
+    
+
+
+    
+    return 0;
 }
 
