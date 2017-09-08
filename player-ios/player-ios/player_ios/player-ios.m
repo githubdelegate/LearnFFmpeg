@@ -23,7 +23,7 @@ int main(int argc, char * argv[]) {
     [myWindow makeKeyAndVisible];
     
     
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+    dispatch_async(dispatch_get_main_queue(), ^{
         NSString *file = [[NSBundle mainBundle] pathForResource:@"output.mp4" ofType:nil];
         const char *fileP = [file cStringUsingEncoding:NSUTF8StringEncoding];
         playSync7(fileP);

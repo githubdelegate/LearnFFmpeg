@@ -1,0 +1,2 @@
+((GLView *)(self.window.rootViewController.view)).animationInterval = 1.0 / kInactiveRenderingFrequency;
+((GLView *)(self.window.rootViewController.view)).animationInterval = 1.0 / 60.0;
